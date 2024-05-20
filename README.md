@@ -19,7 +19,7 @@ Also, you can use `requirement.txt` to create conda environment by ```conda crea
 Download the [LR](https://drive.google.com/file/d/10O3nF2_IRDPoSdZ1EGWcUOum2mHnEJ64/view?usp=sharing) and [RL](https://drive.google.com/file/d/1vRvOMbHoN1bk3KEpk22k80zLxkOgHaUP/view?usp=sharing) dataset, unzip them, and put them into the data folder  
 
 ## Usage
-To run this project, follow these example:
+To run this project, follow this example:
 
 ```bash
 python GNNs_HCP.py --model GCN --hidden_channels 128 --epochs 200 --gpu 0
