@@ -31,24 +31,11 @@ def set_seeds(seed=0):
 def get_device(gpu_id):
     return torch.device(f'cuda:{gpu_id}' if torch.cuda.is_available() else 'cpu')
 
-class Dataset_graph(Dataset):
-    def __init__(self, data_dir):
-        super(Dataset_graph, self).__init__()
-        self.data_files = [os.path.join(data_dir, f) for f in os.listdir(data_dir) if f.endswith('.pt')]
-
-    def __len__(self):
-        return len(self.data_files)
-
-    def __getitem__(self, idx):
-        data_path = self.data_files[idx]
-        data = torch.load(data_path)
-        return data
-
 def load_data():
-    # train_dataset = torch.load('./data/DFYANG_0914/LR_dataset.pth')
-    # test_dataset = torch.load('./data/DFYANG_0914/RL_dataset.pth')
-    train_dataset = Dataset_graph('/ram/USERS/jiaqi/benchmark_fmri/GNN_HCP/data/LR_graph')
-    test_dataset = Dataset_graph('/ram/USERS/jiaqi/benchmark_fmri/GNN_HCP/data/RL_graph')
+    train_dataset = torch.load('./data/LR_dataset.pth')
+    test_dataset = torch.load('./data/RL_dataset.pth')
+    # train_dataset = Dataset_graph(./data/LR_graph')
+    # test_dataset = Dataset_graph('./data/RL_graph')
     val_set, test_set = random_split(test_dataset, [2972, 4458])
     
     batchsize = 64
