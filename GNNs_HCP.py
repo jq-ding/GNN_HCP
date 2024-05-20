@@ -13,6 +13,7 @@ from torch.nn import Linear
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from torch.utils.data import random_split
 
+
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--gpu', type=str, default='3')
