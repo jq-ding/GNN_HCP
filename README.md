@@ -16,7 +16,7 @@ Also, you can use `requirement.txt` to create conda environment by ```conda crea
 
 ## Data
 
-Download the [LR](https://drive.google.com/file/d/10O3nF2_IRDPoSdZ1EGWcUOum2mHnEJ64/view?usp=sharing) and [RL](https://drive.google.com/file/d/1vRvOMbHoN1bk3KEpk22k80zLxkOgHaUP/view?usp=sharing) dataset, unzip them, and put them into the `data` folder  
+Download the [LR](https://drive.google.com/file/d/10O3nF2_IRDPoSdZ1EGWcUOum2mHnEJ64/view?usp=sharing) and [RL](https://drive.google.com/file/d/1vRvOMbHoN1bk3KEpk22k80zLxkOgHaUP/view?usp=sharing) dataset, unzip them, create a `data` folder and put them into it.
 
 ## Usage
 To run this project, follow this example:
