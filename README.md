@@ -22,4 +22,4 @@ Download the [LR](https://drive.google.com/file/d/10O3nF2_IRDPoSdZ1EGWcUOum2mHnE
 To run this project, follow this example:
 
 ```bash
-python GNNs_HCP.py --model GCN --hidden_channels 128 --epochs 200 --gpu 0
+python GNNs_HCP.py --model GCN --hidden_channels 256 --epochs 200 --gpu 0
